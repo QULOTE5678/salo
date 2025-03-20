@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2b$12$ufLaXsxeQJWob6ibMbLyVO5q6.9n3HKAVCiuOtkgnjTV9FmXjBqca",
+      "userid": "74573c25-20ad-4bd0-8c0b-c7ad504033bb",
+      "username": "ADMIN",
+      "banned": false
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "$2b$12$2WtZNbCs2uZetUsU5FOwaeFIMC6TYEZQIEQPpM.Y5LPxQ04Rv2QpS",
+      "userid": "c9237fdf-734d-426a-baaf-f470c9530331",
+      "username": "juan",
+      "profile_pic": null,
+      "banned": false
+    }
+  ]
+}

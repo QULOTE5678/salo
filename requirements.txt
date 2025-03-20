@@ -1,0 +1,12 @@
+flask
+jsonpatch
+requests
+bcrypt
+bcrypt
+bcrypt
+flask-socketio
+psutil
+psutil
+psutil
+psutil
+psutil

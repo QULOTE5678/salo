@@ -1,0 +1,41 @@
+modules = ["python-3.12", "web"]
+task = "shell.exec"
+args = "python server.py"
+run = "python server.py"
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "python server.py"]
+
+[workflows]
+
+[[workflows.workflow]]
+name = "run"
+mode = "sequential"
+author = 40598655
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python server.py"
+
+[[workflows.workflow]]
+name = "audi"
+mode = "sequential"
+author = 40598655
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python auctions.py"
+
+[[ports]]
+localPort = 5055
+externalPort = 9000
+[[workflows.workflow]]
+name = "clean-db"
+mode = "sequential"
+author = 40598655
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python clean_db.py"
